@@ -1,0 +1,6 @@
+{
+  "name": "BLADE Hookah Bar",
+  "description": "Modern and premium lounge website for BLADE Hookah Bar in Omsk with interactive features, elegant booking, and real guest reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

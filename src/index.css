@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-syne: "Syne", sans-serif;
+  
+  --color-brand-bg: #0d0714;
+  --color-brand-bg-dark: #07030a;
+  --color-brand-purple: #bc26f5;
+  --color-brand-purple-dark: #8616b3;
+  --color-brand-indigo: #42127a;
+  --color-brand-gold: #d9a752;
+}
+
+/* Custom scrollbar and ambient styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0714;
+}
+::-webkit-scrollbar-thumb {
+  background: #42127a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bc26f5;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0d0714;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+/* Custom selection */
+::selection {
+  background: rgba(188, 38, 245, 0.3);
+  color: #ffffff;
+}
+
+/* Custom utility classes */
+.glass-panel {
+  background: rgba(18, 9, 28, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(188, 38, 245, 0.15);
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px rgba(188, 38, 245, 0.25);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 15px rgba(188, 38, 245, 0.6);
+}
+
+/* Hide default cursor on desktop device when custom cursor is active */
+@media (min-width: 1024px) {
+  .custom-cursor-active {
+    cursor: none;
+  }
+  .custom-cursor-active a,
+  .custom-cursor-active button,
+  .custom-cursor-active input,
+  .custom-cursor-active select,
+  .custom-cursor-active textarea,
+  .custom-cursor-active [role="button"] {
+    cursor: none;
+  }
+}
+
